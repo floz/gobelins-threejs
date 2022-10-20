@@ -1,0 +1,1 @@
+{"mappings":"AAAA;;;;;;AAMA","sources":["2209_gobelins-threejs/repo/__common/style.css"],"sourcesContent":["body {\n  background-color: #fff;\n\tmargin: 0;\n\tpadding: 0;\n}\n\ncanvas {\n  position: absolute;\n  left: 0;\n\ttop: 0;\n}"],"names":[],"version":3,"file":"index.a15540d0.css.map","sourceRoot":"/__parcel_source_root/"}
