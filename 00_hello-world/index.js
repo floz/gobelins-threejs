@@ -22,7 +22,9 @@ setup()
 createMesh()
 
 function render() {
-	engine.renderer.render( scene, camera )
+	// Update ce qu'il faut
+
+	// Render la scene
 }
 
 // Notre frame loop
