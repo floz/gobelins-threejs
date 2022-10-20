@@ -83,7 +83,7 @@ vec3 pnoiseVec3(vec3 x) {
 }
 
 vec3 getPerlinTurbulence( vec2 position, float scale, float strength, float time ) {
-  vec3 perlin = pnoiseVec3( vec3( position.xy + vec2( uAnimTime * 1.56, uAnimTime * 0.35 ), time ) * scale );
+  vec3 perlin = pnoiseVec3( vec3( position.xy, time ) * scale );
   perlin *= strength;
   return perlin;
 }
