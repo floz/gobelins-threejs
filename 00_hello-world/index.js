@@ -2,6 +2,8 @@ import * as THREE from '../__common/libs/three.module';
 import * as dat from '../__common/libs/dat.gui.min'
 import OrbitControls from '../__common/libs/orbitcontrols'
 
+import audio from '../__common/audio'
+
 import Engine from '../__common/engine'
 import Cone from './Cone';
 
@@ -109,5 +111,19 @@ function onFrame() {
 
 	render()
 }
+
+//
+
+function onBeat() {
+	console.log( 'onBeat' )
+}
+
+audio.start( {
+	onBeat: onBeat,
+	live: false,
+	src: require('url:./static/audio/galvanize.mp3')
+})
+
+//
 
 onFrame()
